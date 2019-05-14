@@ -252,3 +252,11 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+
+/**
+* Disqus
+*/
+.disqus_comments {
+  background: $background-gradient;
+  padding: 10px;
+}
