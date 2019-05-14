@@ -1,0 +1,53 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
+            </li>
+            {%- if site.email -%}
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- endif -%}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        {%- include social.html -%}
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{- site.description | escape -}}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+<script>
+  var myNav = document.querySelector('.site-header');
+  function navbarscrolleffect(){
+    if (window.pageYOffset < 20 ) {
+      console.log("kurang");
+      myNav.style.background = "rgba(0, 0, 0, 0)";
+    } 
+    else {
+      console.log("lebih");
+      myNav.style.background = "rgba(0, 0, 0, .5)";
+    }
+  }
+  navbarscrolleffect();
+  window.onscroll = function () {
+    navbarscrolleffect();
+  };
+</script>
