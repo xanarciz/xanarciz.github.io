@@ -3,7 +3,7 @@ email: xanarciz@gmail.com
 description: >-
   Blog tempat Xanarciz menulis.
 baseurl: "/"
-url: ""
+url: "http://xanarciz.github.io"
 twitter_username: xanarciz
 github_username:  xanarciz
 permalink: /:title.html
